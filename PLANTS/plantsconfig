@@ -1,4 +1,7 @@
 ####PLANTS 도킹을 수행하기 위한 설정 파일
+#도킹 파라미터 설정(리셉터 파일, 리간드 파일, 결합부위 정보, 출력 디렉토리 등).
+#탐색 및 클러스터링 설정(반경, RMSD, 최대 구조 개수 등)
+
 scoring_function chemplp
 search_speed speed1
 
