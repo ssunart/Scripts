@@ -1,0 +1,11 @@
+####PLANTS 도킹을 수행하기 위한 설정 파일
+scoring_function chemplp
+search_speed speed1
+
+protein_file /home/sangmin/casp16/L1000/1KLT/1KLT_rec.mol2
+ligand_list /home/sangmin/casp16/L1000/1KLT/ledock_ligands  #mol2
+output_dir /home/sangmin/casp16/L1000/1KLT/plants_result
+bindingsite_center 8.871 35.832 10.613
+bindingsite_radius 10.831086775878925
+cluster_structures 1000
+cluster_rmsd 2.0
