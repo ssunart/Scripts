@@ -8,13 +8,13 @@ alias probis='/home/soowon/apps/probis/probis'
 TARGET=TARGET/8sya_prot
 probis -extract -f1 ${TARGET}.pdb -c1 A -srffile ${TARGET}.srf
 
-cd protein/
+cd pocket/
 
 
 start_time=$(date +%s)
 echo "Start processing at $(date)"    
 
-probis -ncpu 2 -surfdb -local -sfile prot_srf.txt -f1 ../${TARGET}.srf -c1 A -nosql example.nosql
+probis -ncpu 2 -surfdb -local -sfile pock_srf.txt -f1 ../${TARGET}.srf -c1 A -nosql example.nosql
 
 probis -results -f1 ../${TARGET}.pdb -c1 A -nosql example.nosql -json example.json
 python check_json.py
@@ -23,3 +23,4 @@ python check_json.py
 
 end_time=$(date +%s)
 echo finished at $(date)
+
