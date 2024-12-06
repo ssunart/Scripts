@@ -13,6 +13,7 @@
   12. RTMScore (Model)
   13. meeko
   14. rdkit
+  15. plip
   
 
 < Protein >
