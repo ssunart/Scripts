@@ -1,5 +1,5 @@
 ###molecule descriptor preparation
-
+#SMILES 구조로부터 다양한 분자 특성을 생성하고, 이를 정리한 후, 학습 데이터를 구성하는 전체 워크플로우
 
 import pandas as pd
 import numpy as np
