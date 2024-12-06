@@ -1,0 +1,6 @@
+###Small molecule docking DB
+Enamine
+BindingDB
+PDBbind
+DUD-E
+LIT-PCBA
