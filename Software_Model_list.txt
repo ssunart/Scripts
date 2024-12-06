@@ -13,7 +13,13 @@
   12. RTMScore (Model)
   13. meeko
   14. rdkit
-  15. plip
+  15. 2d interaction analysis tools
+    a. plip (https://github.com/pharmai/plip)
+    b. Poseview (https://www.zbh.uni-hamburg.de/en/forschung/amd/server/poseview.html)
+    c. PlexView (https://playmolecule.org/PlexView/)
+  16. Bindingsite prediction tools
+    a. p2rank (https://github.com/rdk/p2rank)
+    b. f-pocket (https://github.com/Discngine/fpocket)
   
 
 < Protein >
