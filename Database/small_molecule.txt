@@ -4,3 +4,4 @@ BindingDB
 PDBbind
 DUD-E
 LIT-PCBA
+ZINC
