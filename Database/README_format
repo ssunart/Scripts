@@ -1,0 +1,156 @@
+Enamine dataset
+
+Updated by Soowon on May 30, 2023.
+
+
+[Diversity Libraries]
+
+1. Hit Locator Library (HLL-460)                                        #Total ~ 5.4 GB
+ -Raw data size: 460,160 compounds
+ -description: The largest diversity library with high MedChem tractability.
+
+ <Contents>
+ a. |- Raw_data/ : SDF file, SMI file, The SMILES file format was created with OpenBabel.
+
+ b. |- 3D_lig/   : 3D conformation of compounds (OpenBabel, RDKit)
+                   Different tools, such as OpenBabel and RDKit, have been used to generate distinct 3D conformations. 
+		           The frequency of errors may vary depending on the tool used, leading to different numbers of 3D conformation compounds generated.
+	    |- obabel/ : 226,355 compounds, Enam_HLLXXX.sdf
+        |- rdkit/  : 460,128 compounds, located in the 'split_sdf/' directory, Enamine_Hit_Locator_Library_3D_XXX.sdf
+
+ c. |- meeko_rdkit/: PDBQT file for Docking (in progress).
+                     Ligand preprocessing was performed using 'meeko'.
+
+		    ###Progress###
+            obabel: 150,755 compounds
+		    RDKit: 272,613 compounds
+
+
+
+2. Discovery Diversity Set (DDS-50)                                     #Total ~ 911 MB
+ -Raw data size: 50,240 compounds.
+ -description: Top-quality diverse library of recently synthesized compounds.
+
+ <Contents>
+ a. |- Raw_data/ : SDF file, SMI file, The SMILES file format was created with OpenBabel.
+
+ b. |- 3D_lig/   : 3D conformation of compounds (OpenBabel, RDKit)
+                   Different tools, such as OpenBabel and RDKit, have been used to generate distinct 3D conformations. 
+		           The frequency of errors may vary depending on the tool used, leading to different numbers of 3D conformation compounds generated.
+	    |- obabel/ : 50,240 compounds, Enam_DDSXXX.sdf
+        |- rdkit/  : 50,232 compounds, Enamine_DDS50_XXX.sdf 
+    
+ c. |- meeko_obabel/: PDBQT file for Docking.
+                      Ligand preprocessing was performed using 'meeko'.
+                      50,174 compounds, Enam_DDSXXX.pdbqt
+ 
+ d. |- meeko_rdkit/: PDBQT file for Docking.
+                     Ligand preprocessing was performed using 'meeko'.
+		             RDKit: 50,232 compounds, Enamine_DDS50_XXX.pdbqt
+
+
+3. Discovery Diversity Set (DDS-10)                                     #Total ~ 206 MB
+ -Raw data size: 10,240 compounds.
+ -description: High-quality diverse library of latest compounds.
+
+ <Contents>
+ a. |- Raw_data/ : SDF file, SMI file, The SMILES file format was created with OpenBabel.
+
+ b. |- 3D_lig/   : 3D conformation of compounds (OpenBabel, RDKit)
+                   Different tools, such as OpenBabel and RDKit, have been used to generate distinct 3D conformations. 
+		           The frequency of errors may vary depending on the tool used, leading to different numbers of 3D conformation compounds generated.
+	    |- obabel/ : 10,240 compounds, Enam_DDS10XXX.sdf
+        |- rdkit/  : 10,240 compounds, Enamine_DDS10_XXX.sdf 
+    
+ c. |- meeko_obabel/: PDBQT file for Docking (in progress).
+                      Ligand preprocessing was performed using 'meeko'.
+                      10,240 compounds, Enam_DDS10XXX.pdbqt
+ d. |- meeko_rdkit/ : PDBQT file for Docking (in progress).
+                      Ligand preprocessing was performed using 'meeko'.
+                      10,240 compounds, Enamine_DDS10_XXX.pdbqt
+
+
+4. Covalent Screening Library (CSL-11760)                               #Total ~ 241 MB
+ -Raw data size: 11,760 compounds.
+ -description: Diverse covalent library with most demanded warhead types
+
+ <Contents>
+ a. |- Raw_data/ : SDF file, SMI file, The SMILES file format was created with OpenBabel.
+
+ b. |- 3D_lig/   : 3D conformation of compounds (OpenBabel, RDKit)
+                   Different tools, such as OpenBabel and RDKit, have been used to generate distinct 3D conformations. 
+		           The frequency of errors may vary depending on the tool used, leading to different numbers of 3D conformation compounds generated.
+	    |- obabel/ : 11,760 compounds, Enam_CSLXXX.sdf
+        |- rdkit/  : 11,760 compounds, Enamine_CSL_XXX.sdf 
+    
+ c. |- meeko_obabel/: PDBQT file for Docking (in progress).
+                      Ligand preprocessing was performed using 'meeko'.
+                      11,759 compounds, Enam_CSLXXX.pdbqt
+ d. |- meeko_rdkit/ : PDBQT file for Docking (in progress).
+                      Ligand preprocessing was performed using 'meeko'.
+                      11,759 compounds, Enamine_CSL_XXX.pdbqt
+ 
+
+
+5. Phenotypic Screening Library (PSL-5760)                              #Total ~ 121 MB
+ -Raw data size: 5,760 compounds.
+ -description: Special diversity library created for Phenotypic Screens.
+
+ <Contents>
+ a. |- Raw_data/ : SDF file, SMI file, The SMILES file format was created with OpenBabel.
+
+ b. |- 3D_lig/   : 3D conformation of compounds (OpenBabel, RDKit)
+                   Different tools, such as OpenBabel and RDKit, have been used to generate distinct 3D conformations. 
+		           The frequency of errors may vary depending on the tool used, leading to different numbers of 3D conformation compounds generated.
+	    |- obabel/ : 5,760 compounds, Enam_PSLXXX.sdf
+        |- rdkit/  : 5,760 compounds, Enamine_PSL_XXX.sdf
+    
+ c. |- meeko_obabel/: PDBQT file for Docking (in progress).
+                      Ligand preprocessing was performed using 'meeko'.
+                      5,745 compounds, Enam_PSLXXX.pdbqt
+ d. |- meeko_rdkit/ : PDBQT file for Docking (in progress).
+                      Ligand preprocessing was performed using 'meeko'.
+                      5,751 compounds, Enamine_PSL_XXX.pdbqt
+ 
+
+6. PAINS Library (PAINS-320)                                            #Total ~ 5.9 MB
+ -Raw data size: 320 compounds.
+ -description: Special diverse selection of frequent hitters.
+
+ <Contents>
+ a. |- Raw_data/ : SDF file, SMI file, The SMILES file format was created with OpenBabel.
+
+ b. |- 3D_lig/   : 3D conformation of compounds (OpenBabel, RDKit)
+                   Different tools, such as OpenBabel and RDKit, have been used to generate distinct 3D conformations. 
+		           The frequency of errors may vary depending on the tool used, leading to different numbers of 3D conformation compounds generated.
+	    |- obabel/ : 320 compounds, Enam_PAINSXXX.sdf
+        |- rdkit/  : 319 compounds, Enamine_PAINS_XXX.sdf 
+    
+ c. |- meeko_obabel/: PDBQT file for Docking.
+                      Ligand preprocessing was performed using 'meeko'.
+                      317 compounds, Enam_PAINSXXX.pdbqt
+ d. |- meeko_rdkit/: PDBQT file for Docking.
+                      Ligand preprocessing was performed using 'meeko'.
+                      316 compounds, Enamine_PAINSXXX.pdbqt
+ 
+
+[REAL database]
+
+ - description: REAL database comprises over 6B molecules which comply with Ro5 and Veber criteria: MW≤500, SlogP≤5, HBA≤10, HBD≤5, RotBonds≤10, and TPSA≤140.
+               Molecules are sorted based on Heavy Atom Count (HAC). Fields description can be found here.(CXSMILES format)
+- The 'readme_annotations.txt' file contains detailed information about the fields in CXSMILES.
+
+- Raw_data
+Enamine_REAL_HAC_6_21_420M_CXSMILES.cxsmiles - 420M compounds (419,695,849)
+Enamine_REAL_HAC_22_23_471M_CXSMILES.cxsmiles - 471M compounds (471,482,425)
+Enamine_REAL_HAC_24_394M_CXSMILES.cxsmiles
+Enamine_REAL_HAC_25_557M_CXSMILES.cxsmiles
+Enamine_REAL_HAC_26_833M_Part_1_CXSMILES.cxsmiles
+Enamine_REAL_HAC_26_833M_Part_2_CXSMILES.cxsmiles
+Enamine_REAL_HAC_27_1.1B_Part_1_CXSMILES.cxsmiles
+Enamine_REAL_HAC_27_1.1B_Part_2_CXSMILES.cxsmiles
+Enamine_REAL_HAC_28_1.2B_Part_1_CXSMILES.cxsmiles
+Enamine_REAL_HAC_28_1.2B_Part_2_CXSMILES.cxsmiles
+Enamine_REAL_HAC_29_38_988M_Part_1_CXSMILES.cxsmiles
+Enamine_REAL_HAC_29_38_988M_Part_2_CXSMILES.cxsmiles
+
