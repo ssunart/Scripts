@@ -6,4 +6,3 @@ The codes compiled here are utilized for research in **in silico drug discovery*
 
 
 https://pubmed.ncbi.nlm.nih.gov/37689271/
-DOI: 10.1016/j.bcp.2023.115792
