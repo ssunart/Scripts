@@ -24,6 +24,8 @@
 
 < Protein >
   1. ProBiS 
+  2. RCSB PDB
+  3. Foldseek
 
 < Visualizer >
   1. Chimera & ChimeraX
