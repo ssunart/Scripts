@@ -1,0 +1,18 @@
+Docking process for benchmark (BindingDB)
+
+1. Raw complex 전처리
+: prepare_receptor (option): -A 'checkhydrogens' -U 'nphs_waters' -e
+
+2. Ref_lig 전처리
+: Chimera의 DockPrep으로 mol2 생성, mk_prepare_ligand 처리(meeko, pdbqt 생성)
+
+3. Grid 생성(prepare_gpf4.py 파일 필요)
+pythonsh prepare_gpf4.py -l 1onp_Nligand.pdbqt -r 1ONP_prep.pdbqt -p ligand_types='HD,Br,Cl,A,C,N,P,NA,OA,F,S,SA,I' -p npts='50, 50, 50' -p spacing='0.4' -y
+
+4. Ligand set 처리
+    a. split(sdf)
+    b. mk_prep
+
+5. docking (nrun=100)
+
+6. Sorting energy (with code)
