@@ -1,4 +1,5 @@
 ###두 가지 데이터 분석 및 시각화
+##PPAR과 ERRa 리간드의 공통 분자를 찾고, 이들의 결합 친화도를 다양한 방식으로 분석하고 시각화
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
