@@ -35,3 +35,6 @@
   1. Amber
   2. Gromacs
   3. Openmm (python3)
+
+< AI >
+pycaret (ML)
