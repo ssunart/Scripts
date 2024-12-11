@@ -1,0 +1,7 @@
+Morgan fingerprint (ECFP)
+RDKit descriptor
+MACCS key
+Mordred
+mol2vec
+graph representation
+sequence one-hot encoding
