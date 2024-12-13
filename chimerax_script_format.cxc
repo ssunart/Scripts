@@ -1,0 +1,18 @@
+open L1014_592_3S0N/*.pdb L1014_592_3S0N/*.sdf
+set bgColor white
+select protein & H
+del sel
+select ::name="UNL"
+style sel ball
+select sel :< 6
+color (#!1 & sel) cyan
+color (#!1 & sel) byhetero
+show sel atoms
+show sel surfaces
+transparency (#!1 & sel) 60
+label (#!1 & sel) text "{0.name}{0.number}{0.insertion_code}"
+ui tool show H-Bonds
+hbonds reveal true
+ui tool show Clashes
+clashes ignoreHiddenModels true
+~select
