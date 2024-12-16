@@ -1,0 +1,22 @@
+LeDock process
+
+Docking process for benchmark (BindingDB)
+
+1. Raw complex 전처리
+: lepro_linux_x86  1ONP.pdb
+
+2. Ref_lig 전처리(mol2 file 준비, bash 활용, run_mol2.sh)
+: obabel -i sdf sdf/1ONP_Lig_0.sdf -o mol2 -O mol2/1ONP_Lig_0.mol2
+
+
+3. Configure file 수정 (nrun, ligand_list)
+
+4. Ligand set 처리
+    a. split(sdf)
+    b. mk_prep
+
+5. docking (nrun=100)
+    ledock_linux_x86 dock.in
+    (Conformation file 필요시) ledock_linux_x86 -spli docked_file.dok
+
+6. Sorting energy (with code)
