@@ -1,3 +1,5 @@
+###단백질-리간드 상호작용을 그래프 형태로 표현
+
 #!/usr/bin/env python
 import os
 import numpy as np
