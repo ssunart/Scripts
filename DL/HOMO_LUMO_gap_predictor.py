@@ -185,3 +185,42 @@ for epoch in range(n_epoch): # 100 epoch 동안 학습을 시키자!
     val_loss_list.append(val_loss)
 
 
+test()
+##Loss 값의 변화를 확인
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+plt.plot(train_loss_list, 'ro-', label="Train Loss")
+plt.plot(val_loss_list, 'b--', label='Validation loss')
+plt.xlabel("Epoch", fontsize = "large")
+plt.ylabel("Loss", fontsize="large")
+plt.title("Change of loss values", fontsize='xx-large')
+plt.legend()
+
+
+##예측 결과를 plot
+outputs = model(test_X)
+outputs = outputs[:,0]
+outputs.shape
+
+preds = outputs.detach().numpy() # detach는 gradient 계산이 필요 없다는 것을 의미. / "detach" means that we will not claculate gradients.
+y_true = test_y.detach().numpy() 
+
+plt.scatter(y_true, preds) # scatter plot 그림. 
+plt.plot(range(0, 14, 1), range(0, 14, 1),  'r--', ms = 0.1,) # diagonal line (대각선)을 그려줌. 
+
+plt.xlabel("Quantum calculation", fontsize='x-large')
+plt.ylabel("Prediction", fontsize='x-large')
+plt.title("Exp. vs. Predictions", fontsize='xx-large')
+
+##Pearson correlation coefficient 를 계산
+import numpy as np
+np.corrcoef(y_true, preds) # Calculate the Pearson's correlation coefficient.
+
+#Saving the trained model
+torch.save(model, "my_model.pkl") 
+#Loading the saved model
+model2 = torch.load("my_model.pkl")
+print(model2)
+model2.parameters()
+model2(test_X)
