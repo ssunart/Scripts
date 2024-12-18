@@ -22,10 +22,11 @@
     b. f-pocket (https://github.com/Discngine/fpocket)
   
 
-< Protein >
+< Protein analysis >
   1. ProBiS 
   2. RCSB PDB
   3. Foldseek
+  4. TMscore
 
 < Visualizer >
   1. Chimera & ChimeraX
@@ -38,3 +39,9 @@
 
 < AI >
 pycaret (ML)
+
+<Molecular generative model>
+MolGAN
+ResGen
+Pockel2Mol
+SurfGen
