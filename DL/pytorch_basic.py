@@ -1,3 +1,4 @@
+###PyTorch와 NumPy를 사용하여 1차원 및 다차원 배열(텐서)을 생성하고, 다양한 조작 및 속성 확인 방법을 학습
 #pytorch load & version check
 import torch
 print(torch.__version__)
