@@ -364,3 +364,44 @@ def calc_rdkit_descriptors(mol):
                 
     return finger
 
+desc = []
+for m in tqdm(molecules): # tqdm is used to show progress.
+  desc.append(calc_rdkit_descriptors(m))
+
+import pandas as pd
+pd.set_option('display.max_columns', None)
+df = pd.DataFrame(desc)
+
+df.describe()
+"""혹시 NaN (Not a Number)가 있는 column이나 row가 있다면 제외하자.
+dropna라는 method를 사용하면 NaN이 들어 있는 column이나 row를 삭제할 수 있다.
+"""
+
+df_new = df.dropna(axis='columns')
+df_new = df.dropna(axis='rows') #NaN이 들어 있는 행을 삭제 한다.
+
+##Mordred를 이용한 방법 
+"""Mordred는 기존에 제안된 많은 분자 descriptor들을 손쉽게 한 번에 계산할 수 있도록 다양한 함수들을 미리 구현하여 묶어놓은 python package이다.
+https://jcheminf.biomedcentral.com/articles/10.1186/s13321-018-0258-y
+Mordred는 약 1600개 이상의 descriptor계산을 지원한다."""
+
+from rdkit import Chem
+from mordred import Calculator, descriptors
+
+# create descriptor calculator with all descriptors
+calc = Calculator(descriptors, ignore_3D=True)
+len(calc.descriptors) #descriptor 갯수
+mol = Chem.MolFromSmiles('c1ccccc1')
+calc(mol)[:10] #처음 10개의 descriptor 확인
+
+# 여러 분자의 descriptor 계산
+# calculate multiple molecule
+mols = [Chem.MolFromSmiles(smi) for smi in ['c1ccccc1Cl', 'c1ccccc1O', 'c1ccccc1N']]
+df = calc.pandas(mols)
+df['SLogP']
+
+#NaN 값이 있는 행과 열을 제외시켜 보자.
+df2 = calc.pandas(molecules)
+df2.describe()
+df2_new = df2.dropna(axis='columns')
+df2_new = df2_new.dropna(axis='rows')
