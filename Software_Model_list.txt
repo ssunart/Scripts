@@ -20,6 +20,7 @@
   16. Bindingsite prediction tools
     a. p2rank (https://github.com/rdk/p2rank)
     b. f-pocket (https://github.com/Discngine/fpocket)
+  17. mols2grid
   
 
 < Protein analysis >
