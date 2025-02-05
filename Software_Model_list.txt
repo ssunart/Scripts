@@ -21,6 +21,10 @@
     a. p2rank (https://github.com/rdk/p2rank)
     b. f-pocket (https://github.com/Discngine/fpocket)
   17. mols2grid
+  18. openEye
+  19. BIOsolveIT
+  20. Cresset flare
+  21. schrodinger Glide
   
 
 < Protein analysis >
