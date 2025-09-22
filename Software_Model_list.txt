@@ -33,6 +33,9 @@
   3. Foldseek
   4. TMscore
 
+< Genomic Design >
+  1. Evo 2
+
 < Visualizer >
   1. Chimera & ChimeraX
   2. pymol
