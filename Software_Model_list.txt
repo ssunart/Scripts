@@ -39,7 +39,9 @@
 < Visualizer >
   1. Chimera & ChimeraX
   2. pymol
-
+#Gallery Link
+ https://www.rbvi.ucsf.edu/chimera/animations/animations.html
+ https://www.rbvi.ucsf.edu/chimera/ImageGallery/
 < MD >
   1. Amber
   2. Gromacs
