@@ -33,8 +33,11 @@
   3. Foldseek
   4. TMscore
 
-< Genomic Design >
-  1. Evo 2
+< Protein Design >
+  1. Evo 2 (Genomic Design)
+  2. AlphaFold2 & mmseq2
+  3. RFDiffusion 
+  4. ProteinMPNN
 
 < Visualizer >
   1. Chimera & ChimeraX
