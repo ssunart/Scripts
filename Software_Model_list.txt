@@ -38,6 +38,7 @@
   2. AlphaFold2 & mmseq2
   3. RFDiffusion 
   4. ProteinMPNN
+  5. Boltz
 
 < Visualizer >
   1. Chimera & ChimeraX
