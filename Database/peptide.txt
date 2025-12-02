@@ -2,12 +2,8 @@
 1. Peptipedia	약 30개 이상의 이전 펩타이드 DB들을 통합한 공개 펩타이드 리포지토리. 펩타이드 서열, 기능(activity), 물성 등이 정리되어 있어서, 펩타이드 기반 리드 탐색이나 설계 출발점으로 적합합니다. 
 https://arxiv.org/abs/2101.12210?utm_source=chatgpt.com  / https://app.peptipedia.cl/
 
-
-PeptideDB	동물 유래의 생리활성 펩타이드 (호르몬, 항균/독성 펩타이드, growth-factor 등)를 모아놓은 DB. “자연 유래 bioactive peptide” 검색 시 출발점으로 괜찮습니다. 
-ngdc.cncb.ac.cn
-
 PepBDB	구조 기반: 펩타이드–단백질 복합체 구조(최대 50 aa 펩타이드 포함)를 정리한 데이터베이스로, docking / binding-mode 예측 / 학습용 데이터셋 구축에 유용합니다. 
-OUP Academic
+OUP Academic http://huanglab.phys.hust.edu.cn/pepbdb/
 
 MimoDB	파지 디스플레이(phage-display) 또는 라이브러리 스크리닝으로 얻어진 밈오토프(mimotope) 데이터를 모은 DB — 리간드 탐색, 항체/리셉터 상호작용 탐색 출발점이 될 수 있습니다. 
 위키백과
